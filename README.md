@@ -25,4 +25,4 @@ INSTRUCTIONS
 Enjoy!
  
 __Caution:__ DO NOT boot the Pi with a WiFi dongle connected. Do this only after the AP has been raised. 
-         Leaving a dongle connected during the boot process sometimes prevents the AP from configuring properly.
+         Leaving a dongle connected during the boot process sometimes prevents the AP from being raised properly.
