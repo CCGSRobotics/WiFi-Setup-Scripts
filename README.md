@@ -1,5 +1,5 @@
 # rpi-ap-setup-scripts
-This script configures the on board WiFi interface of a Raspberry Pi 3B+ running Debian Stretch to work as an access point.
+This script configures the on board WiFi interface of a Raspberry Pi 3B+ running Raspbian Stretch to work as an access point.
 This configuration also allows you to connect a secondary WiFi interface card (i.e. USB dongle) and use it to connect to 
 a second wireless network (and the Internet) without interfering with the AP.
 
