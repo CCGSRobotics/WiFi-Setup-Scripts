@@ -23,11 +23,10 @@
 #     Example Usage:
 #           sudo sh /usr/local/bin/ap-setup-rpi3bplus.sh KingsLegacy supersecretpassword
 #
-# 8.  Make a cup of tea while you wait for this script to complete.
-# 9.  Reboot.
-# 10.  Test that you can connect to the new AP.
-#
-# Enjoy!
+# 9.  Make a cup of tea while you wait for this script to complete.
+# 10.  Reboot.
+# 
+# Test that you can connect to the new AP and enjoy!
 #
 # Caution: DO NOT boot the Pi with a WiFi dongle connected. Do this only after the AP has been raised.
 #          Leaving a dongle connected during the boot process sometimes prevents the AP from being raised properly.
