@@ -26,12 +26,12 @@
 #          Leaving a dongle connected during the boot process sometimes prevents the AP from being raised properly.
 #
 
-if [ "$EUID" -ne 0 ]
+if [[ "$EUID" -ne 0 ]];
 	then echo "Must be root"
 	exit
 fi
 
-if [[ $# -lt 2 ]];
+if [[ $# -lt 1 ]];
 	then echo "You need to specify an SSID for the AP!"
 	echo "Usage:"
 	echo "sudo $0 SSIDGoesHere [password-optional]"
@@ -73,7 +73,6 @@ wpa=2
 wpa_key_mgmt=WPA-PSK
 wpa_pairwise=CCMP
 rsn_pairwise=CCMP
-
 # DO NOT CHANGE THE LINES ABOVE
 country_code=AU
 ssid=$APSSID
