@@ -15,7 +15,7 @@ INSTRUCTIONS
 7.  Enter the following commands to put the script in the correct location with execute permission:
 			
            sudo chmod u+x ap-setup-rpi3bplus.sh
-           sudo cp ap-setup-rpi3bplus.sh /usr/local/bin
+           sudo cp ap-setup-rpi3bplus.sh /usr/local/bin/
 
 8.  The script takes two arguments. One for the SSID (required) and one for the password (optional).
     If no password is provided then it will default to 'raspberry'.
