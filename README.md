@@ -13,7 +13,9 @@ INSTRUCTIONS
 5.  Copy this script to the desktop on the Pi.
 6.  Open the Terminal application and browse to the folder containing this script (cd ~/Desktop)
 7.  Enter the following: `sudo sh ./name-of-this-script.sh SSID-name ap-password-optional` the default password is 'raspberry'
+    
     __Example:__ 
+    
               `sudo sh ./ap-setup-rpi3bplus.sh KingsLegacy supersecretpassword`
 
 8.  Make a cup of tea while you wait for this script to complete.
