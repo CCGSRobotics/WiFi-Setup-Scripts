@@ -12,14 +12,15 @@
 # 4.  Boot the Raspberry Pi using the newly prepared SD card and connect to the Internet (Unfiltered! Use a hotspot if you have to.)
 # 5.  Copy this script to the desktop on the Pi.
 # 6.  Open the Terminal application and browse to the folder containing this script (cd ~/Desktop)
-# 6.  Enter the following: sudo sh ./name-of-this-script.sh SSID-name ap-password-optional -- (default password is 'raspberry')
+# 7.  Enter the following: sudo sh ./name-of-this-script.sh SSID-name ap-password-optional -- (default password is 'raspberry')
 #     Example: 
 #              sudo sh ./ap-setup-rpi3bplus.sh KingsLegacy supersecretpassword 
 #
-# 7.  Make a cup of tea while you wait for this script to complete.
-# 8.  Reboot.
-# 9.  Test that you can connect to the new AP.
-# 10. Enjoy!
+# 8.  Make a cup of tea while you wait for this script to complete.
+# 9.  Reboot.
+# 10.  Test that you can connect to the new AP.
+# 
+# Enjoy!
 # 
 # Caution: DO NOT boot the Pi with a WiFi dongle connected. Do this only after the AP has been raised. 
 #          Leaving a dongle connected during the boot process sometimes prevents the AP from configuring properly.
