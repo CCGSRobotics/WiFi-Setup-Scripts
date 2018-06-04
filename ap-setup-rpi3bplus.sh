@@ -12,9 +12,16 @@
 # 4.  Boot the Raspberry Pi using the newly prepared SD card and connect to the Internet (Unfiltered! Use a hotspot if you have to.)
 # 5.  Copy this script to the desktop on the Pi.
 # 6.  Open the Terminal application and browse to the folder containing this script (cd ~/Desktop)
-# 7.  Enter the following: sudo sh ./name-of-this-script.sh SSID-name ap-password-optional -- (default password is raspberry)
-#     Example:
-#              sudo sh ./ap-setup-rpi3bplus.sh KingsLegacy supersecretpassword
+# 7.  Enter the following commands to put the script in the correct location with execute permission: 
+# 			
+#			sudo chmod u+x ap-setup-rpi3bplus.sh
+#           sudo cp ap-setup-rpi3bplus.sh /usr/local/bin
+#
+# 8.  The script takes two arguments. One for the SSID (required) and one for the password (optional).
+#     If no password is provided then it will default to raspberry.
+#     
+#     Example Usage:
+#           sudo sh /usr/local/bin/ap-setup-rpi3bplus.sh KingsLegacy supersecretpassword
 #
 # 8.  Make a cup of tea while you wait for this script to complete.
 # 9.  Reboot.
@@ -27,7 +34,7 @@
 #
 
 if [[ "$EUID" -ne 0 ]];
-	then echo "Must be root"
+	then echo "You must be root to run this script. Use sudo."
 	exit
 fi
 
@@ -66,7 +73,7 @@ ieee80211ac=1
 ieee80211d=1
 wmm_enabled=1
 ht_capab=[HT40][SHORT-GI-20][DSSS_CCK-40]
-mac_add_acl=0
+macaddr_acl=0
 auth_algs=1
 ignore_broadcast_ssid=0
 wpa=2
@@ -84,7 +91,7 @@ sed -i -- 's/#DAEMON_CONF=""/DAEMON_CONF="\/etc\/hostapd\/hostapd.conf"/g' /etc/
 cat >> /etc/dhcpcd.conf <<EOF
 # Added by Access Point Setup Script
 interface wlan0
-static ip_address="192.168.100.1/24"
+static ip_address=192.168.100.1/24
 denyinterfaces wlan0
 nohook wpa_supplicant
 EOF
