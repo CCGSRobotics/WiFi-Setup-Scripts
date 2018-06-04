@@ -1,8 +1,8 @@
 #!/bin/bash
 #
 # This script configures the on board WiFi interface of a Raspberry Pi 3B+ running Debian Stretch to work as an access point.
-# This configuration also allows you to connect a second WiFi interface card (i.e. USB dongle) to use as a regular WiFi interface
-# so that you can connect to a second wireless network (and the Internet) without interfering with the AP.
+# This configuration also allows you to connect a secondary WiFi interface card (i.e. USB dongle) and use it to connect to 
+# a second wireless network (and the Internet) without interfering with the AP.
 #
 # INSTRUCTIONS
 # 
@@ -23,7 +23,7 @@
 # Enjoy!
 # 
 # Caution: DO NOT boot the Pi with a WiFi dongle connected. Do this only after the AP has been raised. 
-#          Leaving a dongle connected during the boot process sometimes prevents the AP from configuring properly.
+#          Leaving a dongle connected during the boot process sometimes prevents the AP from being raised properly.
 
 
 if [ "$EUID" -ne 0 ]
