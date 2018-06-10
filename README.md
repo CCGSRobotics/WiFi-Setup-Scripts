@@ -10,23 +10,25 @@ INSTRUCTIONS
 2.  Download a fresh copy of NOOBS (with Raspbian Stretch) from https://www.raspberrypi.org/downloads/noobs/
 3.  Follow the instructions from the site above to install Raspbian Stretch (or above) onto a Raspberry PI 3B+
 4.  Boot the Raspberry Pi using the newly prepared SD card and connect to the Internet (Unfiltered! Use a hotspot if you have to.)
-5.  Copy this script to the desktop on the Pi.
-6.  Open the Terminal application and browse to the folder containing this script by typing `cd ~/Desktop`
-7.  Enter the following commands to put the script in the correct location:
-			
-           sudo cp ap-setup-rpi3bplus.sh /usr/local/sbin/
+5.  Download this repository and unzip it to the Desktop.
+6.  Open the Terminal application and browse to the folder containing this script i.e.
+		
+			 cd ~/Desktop/rpi-ap-setup-scripts
 
-8.  The script takes two arguments. One for the SSID (required) and one for the password (optional).
+7.  The script takes two arguments. One for the SSID (required) and one for the password (optional).
     If no password is provided then it will default to 'raspberry'.
     
     __Example Usage:__
     
-          sudo sh /usr/local/sbin/ap-setup-rpi3bplus.sh KingsLegacy supersecretpassword
+          sudo bash ./pi3bplus-setup.sh KingsLegacy supersecretpassword
+	  
+	__Important:__ The above command only works if you are in the same directory as the script.
 
-9.  Make a cup of tea while you wait for the script to complete.
+8.  Make a cup of tea while you wait for the script to complete.
+9.  When complete, type `sudo raspi-config` and enable SSH and the Pi Camera.
 10. Reboot.
 
-Test that you can connect to the new AP and enjoy!
+Test that you can connect to the new AP then download the code and enjoy your new robot!
  
 __Caution:__ DO NOT boot the Pi with a WiFi dongle connected. Do this only after the AP has been raised. 
          Leaving a dongle connected during the boot process sometimes prevents the AP from being raised properly.
