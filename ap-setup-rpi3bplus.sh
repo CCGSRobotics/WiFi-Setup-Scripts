@@ -108,7 +108,7 @@ systemctl enable dnsmasq
 sudo service hostapd start
 sudo service dnsmasq start
 
-# Install packages required for robot operation
+# Install libraries and packages needed for sensors and robot operation
 apt-get install python-dev python3-setuptools libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 ffmpeg libav-tools -yqq
 pip3 install --upgrade pip setuptools
 
