@@ -12,9 +12,8 @@ INSTRUCTIONS
 4.  Boot the Raspberry Pi using the newly prepared SD card and connect to the Internet (Unfiltered! Use a hotspot if you have to.)
 5.  Copy this script to the desktop on the Pi.
 6.  Open the Terminal application and browse to the folder containing this script by typing `cd ~/Desktop`
-7.  Enter the following commands to put the script in the correct location with execute permission:
+7.  Enter the following commands to put the script in the correct location:
 			
-           sudo chmod u+x ap-setup-rpi3bplus.sh
            sudo cp ap-setup-rpi3bplus.sh /usr/local/bin/
 
 8.  The script takes two arguments. One for the SSID (required) and one for the password (optional).
@@ -22,7 +21,7 @@ INSTRUCTIONS
     
     __Example Usage:__
     
-          sudo sh /usr/local/bin/ap-setup-rpi3bplus.sh KingsLegacy supersecretpassword
+          sudo sh ap-setup-rpi3bplus.sh KingsLegacy supersecretpassword
 
 9.  Make a cup of tea while you wait for the script to complete.
 10. Reboot.
