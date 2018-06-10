@@ -108,4 +108,9 @@ systemctl enable dnsmasq
 sudo service hostapd start
 sudo service dnsmasq start
 
-echo "Setup complete. Reboot now to enable the AP."
+# Install packages required for robot operation
+apt-get install python-dev python3-setuptools libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 ffmpeg libav-tools -yqq
+pip3 install --upgrade pip setuptools
+
+echo "Setup complete. Now run 'sudo raspi-config' and enable the SSH Server and RPi Camera."
+echo "Reboot when finished to enable the AP."
