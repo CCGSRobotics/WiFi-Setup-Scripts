@@ -21,7 +21,7 @@ INSTRUCTIONS
     
     __Example Usage:__
     
-          sudo sh ap-setup-rpi3bplus.sh KingsLegacy supersecretpassword
+          sudo sh /usr/local/sbin/ap-setup-rpi3bplus.sh KingsLegacy supersecretpassword
 
 9.  Make a cup of tea while you wait for the script to complete.
 10. Reboot.
