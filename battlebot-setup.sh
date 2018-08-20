@@ -37,12 +37,8 @@ EOF
 cat > /etc/hostapd/hostapd.conf <<EOF
 interface=wlan0
 driver=nl80211
-# Lock AP into 5Ghz mode
 hw_mode=g
-#channel=7 # Not specifying a channel sets to auto select
-country_code=AU
-# Limit channels to those allowed by country_code
-ieee80211d=1
+channel=7
 wmm_enabled=0
 macaddr_acl=0
 auth_algs=1
