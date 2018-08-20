@@ -21,8 +21,8 @@ if [[ $# -ge 2 ]];
 fi
 
 apt-get remove --purge hostapd -yqq
-apt-get update -yqq
-apt-get upgrade -yqq
+#apt-get update -yqq # Optional - Update repository list
+#apt-get upgrade -yqq # Optional - Upgrade all installed packages - Takes a long time!
 apt-get install hostapd dnsmasq -yqq
 
 # Install libraries and packages needed for sensors and robot operation
