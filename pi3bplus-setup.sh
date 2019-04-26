@@ -21,7 +21,7 @@ if [[ $# -ge 2 ]];
 fi
 
 apt-get remove --purge hostapd -yqq
-#apt-get update -yqq # Optional - Update repository list
+apt-get update -yqq # Optional - Update repository list
 #apt-get upgrade -yqq # Optional - Upgrade all installed packages - Takes a long time!
 apt-get install hostapd dnsmasq -yqq
 
@@ -75,6 +75,7 @@ denyinterfaces wlan0
 nohook wpa_supplicant
 EOF
 
+systemctl unmask hostapd
 systemctl enable hostapd
 systemctl enable dnsmasq
 
