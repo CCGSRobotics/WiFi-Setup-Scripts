@@ -62,6 +62,7 @@ denyinterfaces wlan0
 nohook wpa_supplicant
 EOF
 
+systemctl unmask hostapd
 systemctl enable hostapd
 systemctl enable dnsmasq
 
