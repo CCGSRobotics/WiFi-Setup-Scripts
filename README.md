@@ -13,7 +13,7 @@ INSTRUCTIONS
 5.  Download this repository and unzip it to the Desktop.
 6.  Open the Terminal application and browse to the folder containing this script i.e.
 		
-			 cd ~/Desktop/rpi-ap-setup-scripts
+			 cd ~/Desktop/WiFi-Setup-Scripts
 
 7.  The script takes two arguments. One for the SSID (required) and one for the password (optional).
     If no password is provided then it will default to 'raspberry'.
