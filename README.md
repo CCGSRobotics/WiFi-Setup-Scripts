@@ -10,10 +10,14 @@ INSTRUCTIONS
 2.  Download a fresh copy of NOOBS (with Raspbian Stretch) from https://www.raspberrypi.org/downloads/noobs/
 3.  Follow the instructions from the site above to install Raspbian Stretch (or above) onto a Raspberry PI 3B+
 4.  Boot the Raspberry Pi using the newly prepared SD card and connect to the Internet (Unfiltered! Use a hotspot if you have to.)
-5.  Download this repository and unzip it to the Desktop.
-6.  Open the Terminal application and browse to the folder containing this script i.e.
+5.  Open the Terminal application and clone this repository to the Desktop with the following commands
+
+			 cd ~/Desktop/
+			 git clone https://github.com/CCGSRobotics/WiFi-Setup-Scripts
+			 
+6.  Navigate to the repository directory
 		
-			 cd ~/Desktop/WiFi-Setup-Scripts-master
+			 cd WiFi-Setup-Scripts
 
 7.  The script takes two arguments. One for the SSID (required) and one for the password (optional).
     If no password is provided then it will default to 'raspberry'.
